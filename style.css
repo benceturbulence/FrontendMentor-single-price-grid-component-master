@@ -19,6 +19,9 @@ body {
     margin-top: 3rem;
 }
 
+section {
+    padding: 2rem;
+}
 /* typography */
 
 .card {
@@ -75,7 +78,9 @@ li {
     padding-bottom: .5em;
 }
 
-
+li:last-child {
+    padding-bottom: 0;
+}
 
 li a {
     text-decoration: none;
@@ -153,8 +158,9 @@ li a {
     display: block;
 }
 
-.card__pricing,
-.card__footer {
+
+.card__footer,
+.card__pricing {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -163,6 +169,12 @@ li a {
 .card__pricing .container {
     min-height: 100%;
 }
+
+.card__footer {
+    display: flex;
+    flex-direction: column;
+}
+
 
 }
 
