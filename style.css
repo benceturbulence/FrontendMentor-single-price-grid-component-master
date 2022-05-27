@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    padding: 1.7rem;
+    padding: 2rem;
 }
 
 .card__top h1 {
@@ -71,8 +71,10 @@ ul {
 }
 
 li {
-    padding-bottom: .3em;
+    padding-bottom: .5em;
 }
+
+
 
 li a {
     text-decoration: none;
@@ -109,6 +111,13 @@ li a {
     border: none;
     margin-top: 1.5rem;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.signup:hover,
+.signup:focus {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 
@@ -128,12 +137,20 @@ li a {
 
 .flex > section {
     width: 100%;
+    height: stretch;
 }
 
 .card__top p {
     max-width: 600px;
 }
 
+.container {
+    border: 1px solid hotpink
+}
+
+.signup {
+    display: block;
+}
 
 .card__pricing,
 .card__footer {
@@ -141,6 +158,11 @@ li a {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.card__pricing .container {
+    min-height: 100%;
+}
+
 }
 
 footer {
